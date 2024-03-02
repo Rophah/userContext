@@ -1,0 +1,46 @@
+section.hero {
+  background-color: var(--background);
+  padding-top: 12rem;
+}
+
+.hero-height {
+  height: 88vh;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text > * {
+  margin-bottom: 1rem;
+  color: var(--foreground);
+  width: 70%;
+}
+
+.btn{
+  display: flex;  
+}
+
+.btn button {
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn-p {
+  background: var(--foreground);
+  color: var(--background);
+  margin-right: 15px;
+}
+
+.btn-p-2 {
+  background: var(--color-orange);
+}
+
+.--bgcolor {
+  background: var(--background);
+}
+
+

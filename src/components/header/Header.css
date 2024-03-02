@@ -1,0 +1,73 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  position: relative;
+  background-color: var(--background);
+  width: 100%;
+}
+
+header::after {
+  content: "";
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  position: absolute;
+  width: 1000px;
+  transform: translateX(-50%);
+  background: var(--foreground);
+}
+
+--flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.--menu {
+  list-style-type: none;
+  margin: 0 15px;
+  font-size: 18px;
+  color: var(--foreground);
+}
+
+.button {
+  background-color: #000;
+  border-radius: 45px;
+  height: 23px;
+  width: 45px;
+  padding: 5px;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moon {
+  color: pink;
+}
+
+.sun {
+  color: yellow;
+}
+
+.ball {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+
+  position: absolute;
+  left: 3px;
+  top: 2px;
+
+  transition: all 2s linear;
+}
+
+.move {
+  transform: translateX(22px);
+}
